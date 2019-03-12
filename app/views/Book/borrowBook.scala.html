@@ -1,0 +1,68 @@
+@()
+
+    <html>
+        <head>
+            <title>
+                Borrow Book
+            </title>
+        </head>
+
+        <header>
+            <h2> Borrow Book </h2>
+        </header>
+
+        <body class="borrow_Book_Body">
+            <form name="borrow_Book_Form">
+
+                    <!--Add validation for isbn
+                       1.availability validation
+                       2.Input characters up to 5 digits
+                       3.Non negative value
+                       4.Restrict value increment button
+                       5.If the book is not available display when will it be available-->
+
+                <div class="borrowBook_fields">
+                    <label>ISBN</label> <br>
+                    <input type="number" name="isbn" required><br>
+                </div>
+
+                    <!--
+                       1. remove increment arrow
+                       2.Input characters up to 7 digits
+                       3.Non negative value and non 0 values -->
+
+                <div class="borrowBook_fields">
+                    <label>Reader ID</label> <br>
+                    <input type="number" name="readerId" required><br>
+                </div>
+
+                    <!--
+                       1. remove increment arrow
+                       2.Input characters up to 11 digits
+                       3.Non negative value and non 0 values -->
+
+                <div class="borrowBook_fields">
+                    <label>Mobile</label> <br>
+                    <input type="number" name="mobile" required><br>
+                </div>
+
+
+                <div class="borrowBok_fields">
+                    <label>Email</label> <br>
+                    <input type="email" name="email" required><br>
+                </div>
+
+
+                <div class="borrowBook_fields">
+                    <label>Borrowed Date</label> <br>
+                    <input type="date" name="borrowedDate" required><br>
+                </div>
+
+                <br>
+                <input type="submit" value="Borrow">
+
+            </form>
+        </body>
+    </html>
+
+

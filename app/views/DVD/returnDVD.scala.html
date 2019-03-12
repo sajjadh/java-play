@@ -1,0 +1,39 @@
+@()
+
+<html>
+    <head>
+        <title>
+            Return DVD
+        </title>
+    </head>
+
+    <header>
+        <h2> Return DVD </h2>
+    </header>
+
+    <body class="borrow_DVD_Body">
+
+        <form name="borrow_DVD_Form">
+
+                <!--Add validation for isbn
+                       1.availability validation
+                       2.Input characters up to 5 digits
+                       3.Non negative value
+                       4.Restrict value increment button
+                       5.Check borrowed date and display fee-->
+
+            <div class="returnDVD_fields">
+                <label>ISBN</label> <br>
+                <input type="number" name="isbn" required><br>
+            </div>
+
+            <div class="returnDVD_fields">
+                <label>Returned Date</label> <br>
+                <input type="date" name="returnedDate" required><br>
+            </div>
+
+            <input type="submit"  value="Return">
+        </form>
+    </body>
+</html>
+

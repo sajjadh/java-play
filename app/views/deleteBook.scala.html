@@ -1,0 +1,35 @@
+@()
+
+<html>
+    <head>
+        <title>
+            Delete Book
+        </title>
+    </head>
+
+    <header>
+        <h2> Delete Book </h2>
+    </header>
+
+    <body class="delete_Book_Body">
+
+        <form name="delete_Book_Form">
+
+            <!--Add validation for isbn
+                       1.availability validation
+                       2.Input characters up to 5 digits
+                       3.Non negative value
+                       4.Restrict value increment button
+                       5.Check borrowed date and display fee-->
+
+            <div class="returnBook_fields">
+                <label>ISBN</label> <br>
+                <input type="number" name="isbn" required><br>
+            </div>
+
+            <!-- Display item type and details -->
+
+        <input type="submit"  value="Delete">
+        </form>
+    </body>
+</html>

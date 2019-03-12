@@ -1,0 +1,88 @@
+@()
+    <html>
+        <head>
+            <title>
+            Create Book
+            </title>
+        </head>
+            <h2> Create New Book </h2>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+
+
+
+
+        <header>
+
+        </header>
+        <body class="create_Book_Body" ng-app="createBook">
+            <form name="create_Book_Form">
+
+                    <!--Add validation for isbn
+                       1.Duplicate validation - add an array
+                       2.Input characters up to 5 digits
+                       3.Non negative value
+                       4.Restrict value increment button -->
+
+                <div class="createBook_fields">
+                    <label>ISBN</label> <br>
+                    <input type="number" name="isbn" ng-model='addBook' required><br>
+                </div>
+
+                <div class="createBook_fields">
+                    <label>Book Name</label> <br>
+                    <input  type="text" name="Book_Name" required><br>
+                </div>
+
+                <div class="createBook_fields">
+                    <label>Sector</label> <br>
+                    <input  type="text" name="sector" required><br>
+                </div>
+
+                    <!-- 1. Avoid negative or 0 value
+                     2. As per the value mentions display Author field -->
+
+                <div class="createBook_fields">
+                    <label>Number of Authors</label> <br>
+                    <input  type="number" name="author#" required><br>
+                </div>
+
+                    <!-- 1. Should display author as per the above mentioned number -->
+
+                <div class="createBook_fields">
+                    <label>Author</label> <br>
+                    <input  type="text" name="Author" required><br>
+                </div>
+
+
+                <div class="createBook_fields">
+                    <label>Publisher</label> <br>
+                    <input  type="text" name="publisher" required><br>
+                </div>
+
+                    <!-- 1. Avoid negative or 0 value -->
+
+                <div class="createBook_fields">
+                    <label>No.of Pages</label> <br>
+                    <input  type="number" name="page#" required><br>
+                </div>
+
+                <div class="createBook_fields">
+                    <label>Publication date</label> <br>
+                    <input  type="date" name="" required><br>
+                </div>
+
+
+
+                <input type="submit" value="Create Book" ng-click='addToBookList(addBook)' >
+
+            </form>
+
+        </body>
+
+    </html>
+
+
+
+
+

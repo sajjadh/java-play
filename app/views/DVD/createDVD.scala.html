@@ -1,0 +1,81 @@
+@()
+<html>
+    <head>
+        <title>
+            Create DVD
+        </title>
+    </head>
+    <h2> Create New DVD </h2>
+    <header>
+
+    </header>
+    <body class="create_DVD_Body">
+        <form name="create_DVD_Form">
+
+                <!--Add validation for isbn
+                       1.Duplicate validation - add an array
+                       2.Input characters up to 5 digits
+                       3.Non negative value
+                       4.Restrict value increment button -->
+
+            <div class="createDVD_fields">
+                <label>ISBN</label> <br>
+                <input type="number" name="isbn" required><br>
+            </div>
+
+            <div class="createDVD_fields">
+                <label>Title</label> <br>
+                <input  type="text" name="Title" required><br>
+            </div>
+
+            <div class="createDVD_fields">
+                <label>Sub-titles</label> <br>
+                <input  type="text" name="sub-titles" required><br>
+            </div>
+
+                <!-- 1. Avoid negative or 0 value
+                     2. As per the value mentions display Author field -->
+
+            <div class="createDVD_fields">
+                <label>Number of Actors</label> <br>
+                <input  type="number" name="actors#" required><br>
+            </div>
+
+                <!-- 1. Should display author as per the above mentioned number -->
+
+            <div class="createDVD_fields">
+                <label>Actors</label> <br>
+                <input  type="text" name="Actor" required><br>
+            </div>
+
+
+            <div class="createDVD_fields">
+                <label>Producer</label> <br>
+                <input  type="text" name="producer" required><br>
+            </div>
+
+                <!-- 1. Check this again -->
+
+            <div class="createDVD_fields">
+                <label>Available languages</label> <br>
+                <input  type="text" name="languages" required><br>
+            </div>
+
+            <div class="createDVD_fields">
+                <label>Sector</label> <br>
+                <input  type="text" name="sector" required><br>
+            </div>
+
+
+            <input type="submit" value="Create DVD">
+
+        </form>
+
+    </body>
+
+</html>
+
+
+
+
+
